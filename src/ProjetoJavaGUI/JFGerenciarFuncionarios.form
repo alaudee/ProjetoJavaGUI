@@ -75,20 +75,20 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField1" alignment="0" min="-2" pref="433" max="-2" attributes="0"/>
+                              <Component id="txtNomeFuncionario" alignment="0" min="-2" pref="433" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="23" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField2" min="-2" pref="215" max="-2" attributes="0"/>
+                              <Component id="txtCPFFuncionario" min="-2" pref="215" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jTextField6" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jTextField8" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtEstadoCivilFuncionario" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtMaeFuncionario" alignment="0" max="32767" attributes="0"/>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
@@ -107,7 +107,7 @@
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jTextField3" alignment="0" min="-2" pref="125" max="-2" attributes="0"/>
+                                      <Component id="txtNascimentoFuncionario" alignment="0" min="-2" pref="125" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -117,15 +117,15 @@
                                           <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
-                                          <Component id="jTextField4" max="32767" attributes="0"/>
+                                          <Component id="txtNaturalidadeFuncionario" max="32767" attributes="0"/>
                                           <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jTextField5" max="32767" attributes="0"/>
-                              <Component id="jTextField7" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtNacionalidadeFuncionario" max="32767" attributes="0"/>
+                              <Component id="txtInstrucaoFuncionario" alignment="0" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
@@ -134,23 +134,23 @@
                                   </Group>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
-                              <Component id="jTextField9" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtPaiFuncionario" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jTextField10" alignment="0" min="-2" pref="227" max="-2" attributes="0"/>
+                              <Component id="txtRGFuncionario" alignment="0" min="-2" pref="227" max="-2" attributes="0"/>
                               <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField12" min="-2" pref="258" max="-2" attributes="0"/>
+                              <Component id="txtBairroFuncionario" min="-2" pref="258" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jTextField11" max="32767" attributes="0"/>
+                              <Component id="txtRuaFuncionario" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
-                              <Component id="jTextField13" max="32767" attributes="0"/>
+                              <Component id="txtCidadeFuncionario" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -168,8 +168,8 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtNomeFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtCPFFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -180,9 +180,9 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtNascimentoFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtNaturalidadeFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtNacionalidadeFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -191,8 +191,8 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextField6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtEstadoCivilFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtInstrucaoFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -201,8 +201,8 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextField8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtMaeFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtPaiFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -211,8 +211,8 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextField10" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtRGFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtRuaFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -221,8 +221,8 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextField12" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField13" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtBairroFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtCidadeFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="15" max="32767" attributes="0"/>
               </Group>
@@ -235,28 +235,31 @@
             <Property name="text" type="java.lang.String" value="Nome"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField1">
+        <Component class="javax.swing.JTextField" name="txtNomeFuncionario">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNomeFuncionarioActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="text" type="java.lang.String" value="CPF"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField2">
+        <Component class="javax.swing.JTextField" name="txtCPFFuncionario">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
             <Property name="text" type="java.lang.String" value="Data de Nascimento"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField3">
+        <Component class="javax.swing.JTextField" name="txtNascimentoFuncionario">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="text" type="java.lang.String" value="Naturalidade"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField4">
+        <Component class="javax.swing.JTextField" name="txtNaturalidadeFuncionario">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
         </Component>
@@ -265,63 +268,63 @@
             <Property name="text" type="java.lang.String" value="Nacionalidade"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField5">
+        <Component class="javax.swing.JTextField" name="txtNacionalidadeFuncionario">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
             <Property name="text" type="java.lang.String" value="Estado Civil"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField6">
+        <Component class="javax.swing.JTextField" name="txtEstadoCivilFuncionario">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
             <Property name="text" type="java.lang.String" value="Grau de Instru&#xe7;&#xe3;o"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField7">
+        <Component class="javax.swing.JTextField" name="txtInstrucaoFuncionario">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
             <Property name="text" type="java.lang.String" value="Nome da M&#xe3;e"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField8">
+        <Component class="javax.swing.JTextField" name="txtMaeFuncionario">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
             <Property name="text" type="java.lang.String" value="Nome do Pai"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField9">
+        <Component class="javax.swing.JTextField" name="txtPaiFuncionario">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel11">
           <Properties>
             <Property name="text" type="java.lang.String" value="RG"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField10">
+        <Component class="javax.swing.JTextField" name="txtRGFuncionario">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel12">
           <Properties>
             <Property name="text" type="java.lang.String" value="Rua"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField11">
+        <Component class="javax.swing.JTextField" name="txtRuaFuncionario">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel13">
           <Properties>
             <Property name="text" type="java.lang.String" value="Bairro"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField12">
+        <Component class="javax.swing.JTextField" name="txtBairroFuncionario">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel14">
           <Properties>
             <Property name="text" type="java.lang.String" value="Cidade"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField13">
+        <Component class="javax.swing.JTextField" name="txtCidadeFuncionario">
         </Component>
       </SubComponents>
     </Container>
@@ -338,10 +341,16 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnCadastrar" min="-2" pref="85" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="btnNovo" min="-2" pref="72" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btnCancelar" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCadastrar" min="-2" pref="85" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="btnAlterar" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnExcluir" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnConsultar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -350,9 +359,12 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnCancelar" pref="32" max="32767" attributes="0"/>
-                      <Component id="btnCadastrar" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="btnConsultar" max="32767" attributes="0"/>
+                      <Component id="btnExcluir" max="32767" attributes="0"/>
+                      <Component id="btnCadastrar" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnNovo" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnAlterar" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -367,10 +379,31 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Cadastrar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCadastrarActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnCancelar">
+        <Component class="javax.swing.JButton" name="btnAlterar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Cancelar"/>
+            <Property name="text" type="java.lang.String" value="Alterar"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnNovo">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Novo"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNovoActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnExcluir">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Excluir"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnConsultar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Consultar"/>
           </Properties>
         </Component>
       </SubComponents>

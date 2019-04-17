@@ -38,6 +38,7 @@ public class JFMenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema ABC - Menu");
+        setResizable(false);
 
         lblPrincipal.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         lblPrincipal.setText("Principal");

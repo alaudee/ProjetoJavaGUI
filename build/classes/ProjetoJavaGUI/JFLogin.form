@@ -97,6 +97,9 @@
           <Font name="Segoe UI" size="14" style="0"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtUsuarioActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JPasswordField" name="txtSenha">
       <Properties>
@@ -113,6 +116,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/ProjetoJavaGUI/imagens/entrar.png"/>
         </Property>
+        <Property name="mnemonic" type="int" value="101"/>
         <Property name="text" type="java.lang.String" value="Entrar"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="verticalAlignment" type="int" value="1"/>
@@ -130,6 +134,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/ProjetoJavaGUI/imagens/sair.png"/>
         </Property>
+        <Property name="mnemonic" type="int" value="115"/>
         <Property name="text" type="java.lang.String" value="Sair"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="verticalAlignment" type="int" value="1"/>

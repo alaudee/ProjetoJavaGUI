@@ -47,11 +47,17 @@ public class JFLogin extends javax.swing.JFrame {
         lblSenha.setText("Senha");
 
         txtUsuario.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsuarioActionPerformed(evt);
+            }
+        });
 
         txtSenha.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         btnEntrar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ProjetoJavaGUI/imagens/entrar.png"))); // NOI18N
+        btnEntrar.setMnemonic('e');
         btnEntrar.setText("Entrar");
         btnEntrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnEntrar.setVerticalAlignment(javax.swing.SwingConstants.TOP);
@@ -64,6 +70,7 @@ public class JFLogin extends javax.swing.JFrame {
 
         btnSair.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ProjetoJavaGUI/imagens/sair.png"))); // NOI18N
+        btnSair.setMnemonic('s');
         btnSair.setText("Sair");
         btnSair.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnSair.setVerticalAlignment(javax.swing.SwingConstants.TOP);
@@ -143,6 +150,10 @@ public class JFLogin extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Erro ao acessar o sistema");
         }
     }//GEN-LAST:event_btnEntrarActionPerformed
+
+    private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
