@@ -149,6 +149,9 @@ public class JFLogin extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(null, "Erro ao acessar o sistema");
         }
+        
+        JFMenuPrincipal abrir = new JFMenuPrincipal(txtUsuario.getText());
+        abrir.setVisible(true);
     }//GEN-LAST:event_btnEntrarActionPerformed
 
     private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed

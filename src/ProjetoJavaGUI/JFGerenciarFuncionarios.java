@@ -24,21 +24,22 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
     public void desabilitarText(){
         txtNomeFuncionario.setEnabled(false);
         txtBairroFuncionario.setEnabled(false);
-        txtCPFFuncionario.setEnabled(false);
+        txtCPF.setEnabled(false);
         txtCidadeFuncionario.setEnabled(false);
-        txtEstadoCivilFuncionario.setEnabled(false);
-        txtInstrucaoFuncionario.setEnabled(false);
+        cboEstadoCivil.setEnabled(false);
+        cboInstrucao.setEnabled(false);
         txtMaeFuncionario.setEnabled(false);
-        txtNacionalidadeFuncionario.setEnabled(false);
-        txtNascimentoFuncionario.setEnabled(false);
+        rdbFeminino.setEnabled(false);
+        rdbMasculino.setEnabled(false);
+        txtDataDeNascimento.setEnabled(false);
         txtPaiFuncionario.setEnabled(false);
         txtRuaFuncionario.setEnabled(false);
         txtNaturalidadeFuncionario.setEnabled(false);
-        txtRGFuncionario.setEnabled(false);
+        txtRG.setEnabled(false);
         btnCadastrar.setEnabled(false);
         btnExcluir.setEnabled(false);
         btnAlterar.setEnabled(false);
-        
+        btnLimpar.setEnabled(false);
     }
 
     /**
@@ -50,40 +51,43 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        gpbSexo = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         txtNomeFuncionario = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        txtCPFFuncionario = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        txtNascimentoFuncionario = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         txtNaturalidadeFuncionario = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        txtNacionalidadeFuncionario = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        txtEstadoCivilFuncionario = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        txtInstrucaoFuncionario = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         txtMaeFuncionario = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         txtPaiFuncionario = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        txtRGFuncionario = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         txtRuaFuncionario = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         txtBairroFuncionario = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         txtCidadeFuncionario = new javax.swing.JTextField();
+        txtDataDeNascimento = new javax.swing.JFormattedTextField();
+        jLabel6 = new javax.swing.JLabel();
+        rdbMasculino = new javax.swing.JRadioButton();
+        rdbFeminino = new javax.swing.JRadioButton();
+        txtCPF = new javax.swing.JFormattedTextField();
+        cboInstrucao = new javax.swing.JComboBox<>();
+        cboEstadoCivil = new javax.swing.JComboBox<>();
+        txtRG = new javax.swing.JFormattedTextField();
         jPanel2 = new javax.swing.JPanel();
         btnCadastrar = new javax.swing.JButton();
         btnAlterar = new javax.swing.JButton();
         btnNovo = new javax.swing.JButton();
         btnExcluir = new javax.swing.JButton();
         btnConsultar = new javax.swing.JButton();
+        btnLimpar = new javax.swing.JButton();
         btnVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -105,8 +109,6 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
 
         jLabel4.setText("Naturalidade");
 
-        jLabel6.setText("Nacionalidade");
-
         jLabel7.setText("Estado Civil");
 
         jLabel8.setText("Grau de Instrução");
@@ -123,6 +125,36 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
 
         jLabel14.setText("Cidade");
 
+        try {
+            txtDataDeNascimento.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+
+        jLabel6.setText("Sexo");
+
+        gpbSexo.add(rdbMasculino);
+        rdbMasculino.setText("Masculino");
+
+        gpbSexo.add(rdbFeminino);
+        rdbFeminino.setText("Feminino");
+
+        try {
+            txtCPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+
+        cboInstrucao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ensino Fundamental Incompleto", "Ensino Fundamental Completo", "Ensino Médio Incompleto", "Ensino Médio Completo", "Ensino Superior Incompleto", "Ensino Superior Completo" }));
+
+        cboEstadoCivil.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Solteiro", "Casado", "Divorciado", "Viúvo", "Separado", " " }));
+
+        try {
+            txtRG.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##.###.###-#")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -135,16 +167,37 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
                             .addComponent(jLabel1)
                             .addComponent(txtNomeFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, 433, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(txtCPFFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel6)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(rdbMasculino)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(rdbFeminino)))
+                                .addGap(59, 59, 59))
+                            .addComponent(txtCPF)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(txtDataDeNascimento))
+                                .addGap(57, 57, 57)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtEstadoCivilFuncionario)
-                                    .addComponent(txtMaeFuncionario)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel4)
+                                        .addGap(132, 132, 132)
+                                        .addComponent(jLabel5))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(txtNaturalidadeFuncionario)
+                                        .addGap(42, 42, 42))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(cboEstadoCivil, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(txtMaeFuncionario, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel7)
                                             .addComponent(jLabel9)
@@ -153,35 +206,20 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
                                                 .addGap(290, 290, 290)
                                                 .addComponent(jLabel12)))
                                         .addGap(0, 0, Short.MAX_VALUE)))
-                                .addGap(42, 42, 42))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(txtNascimentoFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(41, 41, 41)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel4)
-                                        .addGap(132, 132, 132)
-                                        .addComponent(jLabel5))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(txtNaturalidadeFuncionario)
-                                        .addGap(42, 42, 42)))))
+                                .addGap(42, 42, 42)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtNacionalidadeFuncionario)
-                            .addComponent(txtInstrucaoFuncionario)
+                            .addComponent(txtPaiFuncionario)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel10)
-                                    .addComponent(jLabel8)
-                                    .addComponent(jLabel6))
+                                    .addComponent(jLabel8))
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(txtPaiFuncionario)))
+                            .addComponent(cboInstrucao, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtRGFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel13)
-                            .addComponent(txtBairroFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtBairroFuncionario, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE)
+                            .addComponent(txtRG))
                         .addGap(46, 46, 46)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtRuaFuncionario)
@@ -201,7 +239,7 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtNomeFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtCPFFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
@@ -210,17 +248,18 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtNascimentoFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNaturalidadeFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtNacionalidadeFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDataDeNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rdbMasculino)
+                    .addComponent(rdbFeminino))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtEstadoCivilFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtInstrucaoFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cboInstrucao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cboEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
@@ -235,8 +274,8 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
                     .addComponent(jLabel12))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtRGFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtRuaFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtRuaFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtRG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
@@ -271,6 +310,13 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
 
         btnConsultar.setText("Consultar");
 
+        btnLimpar.setText("Limpar");
+        btnLimpar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimparActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -286,18 +332,23 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
                 .addComponent(btnExcluir)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnConsultar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnLimpar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnConsultar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnExcluir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnCadastrar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnNovo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnAlterar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnConsultar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnExcluir, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCadastrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnNovo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(btnAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(btnLimpar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -326,7 +377,7 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(18, Short.MAX_VALUE)
+                .addContainerGap(16, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -350,19 +401,26 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
         txtNomeFuncionario.setEnabled(true);
         txtNomeFuncionario.grabFocus();
         txtBairroFuncionario.setEnabled(true);
-        txtCPFFuncionario.setEnabled(true);
+        txtCPF.setEnabled(true);
+        txtCPF.setText("");
         txtCidadeFuncionario.setEnabled(true);
-        txtEstadoCivilFuncionario.setEnabled(true);
-        txtInstrucaoFuncionario.setEnabled(true);
+        cboEstadoCivil.setEnabled(true);
+        cboInstrucao.setEnabled(true);
         txtMaeFuncionario.setEnabled(true);
-        txtNacionalidadeFuncionario.setEnabled(true);
-        txtNascimentoFuncionario.setEnabled(true);
+        txtDataDeNascimento.setEnabled(true);
+        txtDataDeNascimento.setText("");
+        rdbMasculino.setSelected(false);
+        rdbMasculino.setEnabled(true);
+        rdbFeminino.setSelected(false);
+        rdbFeminino.setEnabled(true);
         txtPaiFuncionario.setEnabled(true);
         txtRuaFuncionario.setEnabled(true);
         txtNaturalidadeFuncionario.setEnabled(true);
-        txtRGFuncionario.setEnabled(true);
+        txtRG.setText("");
+        txtRG.setEnabled(true);
         btnCadastrar.setEnabled(true);
         btnConsultar.setEnabled(false);
+        btnLimpar.setEnabled(true);
     }//GEN-LAST:event_btnNovoActionPerformed
 
     private void txtNomeFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeFuncionarioActionPerformed
@@ -375,6 +433,23 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
         btnExcluir.setEnabled(true);
         btnConsultar.setEnabled(true);
     }//GEN-LAST:event_btnCadastrarActionPerformed
+
+    private void btnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparActionPerformed
+        txtNomeFuncionario.setText("");
+        txtBairroFuncionario.setText("");
+        txtCPF.setText("");
+        txtMaeFuncionario.setText("");
+        txtPaiFuncionario.setText("");
+        txtNaturalidadeFuncionario.setText("");
+        txtCidadeFuncionario.setText("");
+        txtRuaFuncionario.setText("");
+        rdbFeminino.setSelected(false);
+        rdbMasculino.setSelected(false);
+        txtDataDeNascimento.setText("");
+        txtRG.setText("");
+        cboEstadoCivil.setSelectedIndex(0);
+        cboInstrucao.setSelectedIndex(0);
+    }//GEN-LAST:event_btnLimparActionPerformed
 
     /**
      * @param args the command line arguments
@@ -416,8 +491,12 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
     private javax.swing.JButton btnCadastrar;
     private javax.swing.JButton btnConsultar;
     private javax.swing.JButton btnExcluir;
+    private javax.swing.JButton btnLimpar;
     private javax.swing.JButton btnNovo;
     private javax.swing.JButton btnVoltar;
+    private javax.swing.JComboBox<String> cboEstadoCivil;
+    private javax.swing.JComboBox<String> cboInstrucao;
+    private javax.swing.ButtonGroup gpbSexo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -434,18 +513,17 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JRadioButton rdbFeminino;
+    private javax.swing.JRadioButton rdbMasculino;
     private javax.swing.JTextField txtBairroFuncionario;
-    private javax.swing.JTextField txtCPFFuncionario;
+    private javax.swing.JFormattedTextField txtCPF;
     private javax.swing.JTextField txtCidadeFuncionario;
-    private javax.swing.JTextField txtEstadoCivilFuncionario;
-    private javax.swing.JTextField txtInstrucaoFuncionario;
+    private javax.swing.JFormattedTextField txtDataDeNascimento;
     private javax.swing.JTextField txtMaeFuncionario;
-    private javax.swing.JTextField txtNacionalidadeFuncionario;
-    private javax.swing.JTextField txtNascimentoFuncionario;
     private javax.swing.JTextField txtNaturalidadeFuncionario;
     private javax.swing.JTextField txtNomeFuncionario;
     private javax.swing.JTextField txtPaiFuncionario;
-    private javax.swing.JTextField txtRGFuncionario;
+    private javax.swing.JFormattedTextField txtRG;
     private javax.swing.JTextField txtRuaFuncionario;
     // End of variables declaration//GEN-END:variables
 }
