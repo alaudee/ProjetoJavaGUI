@@ -135,6 +135,11 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
 
         gpbSexo.add(rdbMasculino);
         rdbMasculino.setText("Masculino");
+        rdbMasculino.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdbMasculinoActionPerformed(evt);
+            }
+        });
 
         gpbSexo.add(rdbFeminino);
         rdbFeminino.setText("Feminino");
@@ -450,6 +455,10 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
         cboEstadoCivil.setSelectedIndex(0);
         cboInstrucao.setSelectedIndex(0);
     }//GEN-LAST:event_btnLimparActionPerformed
+
+    private void rdbMasculinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbMasculinoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rdbMasculinoActionPerformed
 
     /**
      * @param args the command line arguments
