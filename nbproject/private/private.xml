@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/LAB/Desktop/ProjetoJavaGUI/src/ProjetoJavaGUI/JFLogin.java</file>
             <file>file:/C:/Users/LAB/Desktop/ProjetoJavaGUI/src/ProjetoJavaGUI/JFGerenciarProdutos.java</file>
-            <file>file:/C:/Users/LAB/Desktop/ProjetoJavaGUI/src/ProjetoJavaGUI/JFMenuPrincipal.java</file>
-            <file>file:/C:/Users/LAB/Desktop/ProjetoJavaGUI/src/ProjetoJavaGUI/JFPesquisa.java</file>
+            <file>file:/C:/Users/LAB/Desktop/ProjetoJavaGUI/src/ProjetoJavaGUI/ProdutoDAO.java</file>
+            <file>file:/C:/Users/LAB/Desktop/ProjetoJavaGUI/src/ProjetoJavaGUI/ProdutoBean.java</file>
+            <file>file:/C:/Users/LAB/Desktop/ProjetoJavaGUI/src/ProjetoJavaGUI/Conexao.java</file>
         </group>
     </open-files>
 </project-private>

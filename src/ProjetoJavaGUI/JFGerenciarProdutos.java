@@ -13,9 +13,8 @@ import javax.swing.JOptionPane;
  */
 public class JFGerenciarProdutos extends javax.swing.JFrame {
 
-    /**
-     * Creates new form JFGerenciarProdutos
-     */
+    int flag = 1;
+    
     public JFGerenciarProdutos() {
         initComponents();
     }
@@ -44,7 +43,7 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         btnNovo = new javax.swing.JButton();
-        btnPesquisa = new javax.swing.JButton();
+        btnPesquisar = new javax.swing.JButton();
         btnVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -88,10 +87,10 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
             }
         });
 
-        btnPesquisa.setText("Pesquisar");
-        btnPesquisa.addActionListener(new java.awt.event.ActionListener() {
+        btnPesquisar.setText("Pesquisar");
+        btnPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPesquisaActionPerformed(evt);
+                btnPesquisarActionPerformed(evt);
             }
         });
 
@@ -130,7 +129,7 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jButton3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnPesquisa)))
+                                .addComponent(btnPesquisar)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap(197, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -166,7 +165,7 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
                     .addComponent(jButton2)
                     .addComponent(jButton3)
                     .addComponent(btnNovo)
-                    .addComponent(btnPesquisa))
+                    .addComponent(btnPesquisar))
                 .addContainerGap())
         );
 
@@ -226,9 +225,11 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Item inserido com sucesso");
     }//GEN-LAST:event_btnAdicionarActionPerformed
 
-    private void btnPesquisaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnPesquisaActionPerformed
+    private void btnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarActionPerformed
+        JFPesquisa abrirPesquisar = new JFPesquisa(flag);
+        abrirPesquisar.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnPesquisarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -268,7 +269,7 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdicionar;
     private javax.swing.JButton btnNovo;
-    private javax.swing.JButton btnPesquisa;
+    private javax.swing.JButton btnPesquisar;
     private javax.swing.JButton btnVoltar;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;

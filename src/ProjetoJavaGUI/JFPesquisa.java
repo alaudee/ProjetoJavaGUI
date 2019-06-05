@@ -7,25 +7,19 @@ package ProjetoJavaGUI;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author LABORATORIO_INFO
- */
 public class JFPesquisa extends javax.swing.JFrame {
+    
+    int flagPesquisa;
+    String radioOpcao, descricao;
+    
 
-    /**
-     * Creates new form JFPesquisa
-     */
+    public JFPesquisa(int flag){
+        initComponents();
+        flagPesquisa = flag;
+    };
+    
     public JFPesquisa() {
         initComponents();
-        desabilitarComponentes();
-    }
-    
-    public void desabilitarComponentes(){
-        codigo.setEnabled(false);
-        nome.setEnabled(false);
-        txtDescricao.setEnabled(false);
-        btnLimpar.setEnabled(false);
     }
 
     /**
@@ -58,14 +52,19 @@ public class JFPesquisa extends javax.swing.JFrame {
 
         gpbPesquisa.add(codigo);
         codigo.setText("Código");
-        codigo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                codigoActionPerformed(evt);
+        codigo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                codigoMouseClicked(evt);
             }
         });
 
         gpbPesquisa.add(nome);
         nome.setText("Nome");
+        nome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                nomeMouseClicked(evt);
+            }
+        });
 
         jLabel1.setText("Descrição");
 
@@ -192,17 +191,33 @@ public class JFPesquisa extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-    String descricao;
-    private void codigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_codigoActionPerformed
-        if (codigo.isSelected()){
-             descricao = JOptionPane.showMessageDialog(null, "Você selecionou ")
-        }
-    }//GEN-LAST:event_codigoActionPerformed
 
     private void btnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarActionPerformed
-        codigo.setEnabled(true);
-        nome.setEnabled(true);
+        
+        descricao = txtDescricao.getText();
+        
+        if(flagPesquisa == 1){
+            JFGerenciarProdutos abrirProdutos = new JFGerenciarProdutos();
+            abrirProdutos.setVisible(true);
+            this.setVisible(false);
+            JOptionPane.showMessageDialog(null, "Você veio pela janela Gerenciar Produtos e escolheu " +radioOpcao+ " sua descrição é: " +descricao);
+        }
+        
+        if(flagPesquisa == 2){
+            JFGerenciarFuncionarios abrirFuncionarios = new JFGerenciarFuncionarios();
+            abrirFuncionarios.setVisible(true);
+            this.setVisible(false);
+            JOptionPane.showMessageDialog(null, "Você veio da janela Gerenciar Funcionários e escolheu " +radioOpcao+ " sua descrição é: " +descricao); 
+        }
     }//GEN-LAST:event_btnPesquisarActionPerformed
+
+    private void codigoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_codigoMouseClicked
+        radioOpcao = "código";
+    }//GEN-LAST:event_codigoMouseClicked
+
+    private void nomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nomeMouseClicked
+        radioOpcao = "nome";
+    }//GEN-LAST:event_nomeMouseClicked
 
     /**
      * @param args the command line arguments
