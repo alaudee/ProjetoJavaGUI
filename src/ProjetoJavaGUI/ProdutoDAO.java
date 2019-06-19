@@ -83,7 +83,7 @@ public class ProdutoDAO {
     
     public List<ProdutoBean> listarTodos(){
         
-        String sql = "select * from carro";
+        String sql = "select * from produtos";
         
         List<ProdutoBean> listaProduto = new ArrayList<ProdutoBean>();
         
@@ -101,7 +101,12 @@ public class ProdutoDAO {
                     pb.setCategoria(rs.getString(4));
                     listaProduto.add(pb);
                 }
+                return listaProduto;
+            }else {
+                return null;
             }
+        }catch (SQLException e){
+            return null;
         }
     }
 }

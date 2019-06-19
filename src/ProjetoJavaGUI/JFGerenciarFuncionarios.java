@@ -471,9 +471,7 @@ public class JFGerenciarFuncionarios extends javax.swing.JFrame {
     }//GEN-LAST:event_rdbMasculinoActionPerformed
 
     private void btnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarActionPerformed
-        JFPesquisa abrirPesquisa = new JFPesquisa(flag);
-        abrirPesquisa.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnPesquisarActionPerformed
 
     /**
